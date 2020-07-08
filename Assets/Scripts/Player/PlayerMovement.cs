@@ -55,14 +55,7 @@ namespace Player
         {
             Collider2D collider = Physics2D.OverlapCircle(groundCircle.transform.position, groundCircle.radius, groundLayers);
 
-            if (collider != null)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            return collider != null;
         }
     }
     
